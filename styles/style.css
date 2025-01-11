@@ -498,6 +498,9 @@ ul li a{
   border-radius: 8px;
   margin-top: 32px;
 }
+.common-btn:hover{
+  background-color: #0cf089;
+}
 .sub-btn{
    
   border: 0;
@@ -509,6 +512,9 @@ ul li a{
    
   
 }
+.sub-btn:hover{
+  background-color: #f0910c;
+}
 .promise{
  margin: 24px 64px;
 }
@@ -519,14 +525,3 @@ ul li a{
   
   
     
- */
-/* .promise{
-    margin-top: 54px;
-    width: 622px;
-    height: 19px;
-    color: #0e0e0e9c;
-} */
-
-.news-container{
-  /* display: flex; */
-}
