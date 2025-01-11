@@ -1,22 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-/* .work-sans-<uniquifier> {
-    font-family: "Work Sans", serif;
+
+  .work-sans-normal {
+    font-family: "Work Sans", sans-serif;
     font-optical-sizing: auto;
-    font-weight: <weight>;
     font-style: normal;
-  } */
+  }
+
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body{
+    width: 1600px;
+    max-width: 1280px;
+    margin: 0 160px;
     background-color: #F5F5F5;
-    width: 1158px;
-    margin: 0 auto;
-    font-family: "Fira Sans", serif;
-    font-style: normal;
-   
 }
 
 ul{
@@ -28,37 +28,42 @@ ul{
 ul li{
     list-style: none;
 }
-.ban-2{
+.nav-title{
     
     font-weight: bold;
     font-size: 32px;
 }
 ul li a{
     text-decoration: none;
+   
+}
+.nav-btn{
     font-size: 18px;
-    padding: 30px;
-    border: 1px solid #006A50;
+    font-weight: 600;
+    padding: 15px 30px;
+    border:1px solid  #006A50;
     color: #006A50;
     border-radius: 8px;
 }
-ul li a:hover{
+.nav-btn:hover{
     background-color: #006A50;
     color: #ffffff;
 }
 
 /* banner-section-style starts here */
-  .banner-section{
+  .banner{
+    height: 560px;
     background-color: #C6E4D6;
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 20px;
-    /* padding: 100px 80px; */
     border-radius: 24px;
  
   }
   .hero-content{
+    width: 622px;
+    height: 326px;
     margin: 162px 60px;
   }
   .banner-title{
@@ -67,6 +72,7 @@ ul li a:hover{
   }
   .banner-content{
    font-size: 56px;
+   font-weight: bold;
    color: #0E0E0E;
   }
   .hero-btn{
@@ -76,23 +82,25 @@ ul li a:hover{
     margin-top: 24px;
     background-color: #006A50;
     border-radius: 8px;
-    padding: 34px 17px;
+    padding:17px 34px;
+    border: none;
     
   }
   .hero-btn:hover{
     background-color: #13ddab;
   }
   .hero-img{
+    width: 475px;
+    height: 400px;
+
     margin: 80px 60px;
   }
-  .hero-img img{
-    width: 450px;
-    height: 400px;
-  }
+
 /* banner-section-style ends here */
 
 /* pillars section stars here */
 .pillar-section{
+    height: 600px;
     margin-top: 80px;
 }
 .card-container{
@@ -100,23 +108,24 @@ ul li a:hover{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 24px;
+    gap: 32px 24px;
     
     
 }
 
-/* width: 302px; */
 .card{
-    width: 270px; 
+    width: 302px; 
     height: 244px;
     margin-top: 32px;
     padding: 24px;
     border-radius: 16px;
     background-color: #ffffff;
+    
 }
   .pillar-title{
     font-size: 40px;
     font-weight: bold;
+    color: #0E0E0E;
 
   }
   .card-icon{
@@ -132,12 +141,20 @@ ul li a:hover{
     color: #0e0e0e9c;
     font-size: 16px;
     line-height: 24px;
+    margin-top: 12px;
   }
 /* pillars section ends here*/
 
 /* vision-section starts here */
+.vision-section{
+    height: 765px;
+    margin-top: 80px;
+}
+.vision-container{
+  
+}
 .vision-card-box{
-    display: flex;
+  display: flex;
 }
 .vision-card{
     width: 410px; 
@@ -147,10 +164,123 @@ ul li a:hover{
     border-radius: 16px;
     background-color: #ffffff;
 }
+.news-section{
+  height: 1410px;
+}
+.news{
+  display: flex;
+  gap: 24px;
+  padding: 48px;
+}
+.news-image img{
+  width: 408px;
+  height: 306px;
+  border-radius: 24px;
+}
+.news-content{
+  width: 744px;
+  height: 290px;
+}
+
+/* denote section style start */
+  .denote{
+   margin: 80px 0;
+   text-align: center;
+  }
+  .denote-title{
+    font-size: 40px;
+    font-weight: bold;
+    color: #0E0E0E;
+  }
+  .denote-description{
+    font-size: 16px;
+    line-height: 24px;
+    color: #0e0e0e9f;
+  }
+
+  .denote-card{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 32px 104.5px;
+  }
+  .amount-1{
+    width: 240px;
+    height: 128px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    background-color: #ffffff;
+    padding: 40px;
+  }
+  .amount-2{
+    width: 252px;
+    height: 128px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    background-color: #ffffff;
+    padding: 40px;
+  }
+  .amount-3{
+    width: 243px;
+    height: 128px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    background-color: #ffffff;
+    padding: 40px;
+  }
+  .amount-4{
+    width: 264px;
+    height: 128px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    background-color: #ffffff;
+    padding: 40px;
+  }
+
+  .denote-field{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  .denote-input-field{
+    width: 1032px;
+    height: 64px;
+    margin: 32px 284px;
+    padding: 20px 40px;
+    text-align: center;
+    border: none;
+    outline: none;
+  }
+  ::placeholder{
+    color: #0e0e0e4b;
+    font-size: 20px;
+  }
+  .d-btn{
+    border-radius: 8px;
+    background-color: #006A50;
+    padding: 17px 34px;
+    color: #ffffff;
+    font-weight: 600;
+    border: none;
+  }
+/* denote section style end */
+
+
 /* vision-section ends here */
 
 
-.news-letter{
+.newsLetter{
+  
+    height: 395px;
     background-color: #C6E4D6;
     text-align: center;
     padding: 80px 100px;
@@ -158,13 +288,13 @@ ul li a:hover{
     flex-direction: column;
     border-radius: 24px;
 }
-.news-container{
+.newsContainer{
     width: 750px;
     height: 235px;
  
     margin: 0 auto;
 }
-.news-title{
+.footer-news-title{
     color: 0E0E0E;
     font-size: 40px;
     font-weight: bold;
@@ -195,21 +325,28 @@ ul li a:hover{
     outline: 0;
     padding: 24px 17px;
     border-radius: 24px 0 0 24px ;
-}
-button{
-    width: 150px;
+} 
+.sub-btn{
+  width: 150px;
     border: 0;
     background-color: #006A50;
     color: #ffffff;
     padding: 24px 17px;
     border-radius: 0 24px 24px 0;
   
+}
+
+  
   
     
-}
-.promise{
+ */
+/* .promise{
     margin-top: 54px;
     width: 622px;
     height: 19px;
     color: #0e0e0e9c;
+} */
+
+.news-container{
+  /* display: flex; */
 }
